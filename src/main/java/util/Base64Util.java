@@ -1,10 +1,10 @@
 package util;
 
-import com.linkapital.core.exceptions.UnprocessableEntityException;
+import exceptions.UnprocessableEntityException;
 
 import java.util.Base64;
 
-import static com.linkapital.core.configuration.context.MessageContextHolder.msg;
+import static util.MessageContextHolder.msg;
 
 public class Base64Util {
 

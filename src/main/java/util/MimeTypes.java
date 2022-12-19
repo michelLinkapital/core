@@ -1,13 +1,12 @@
 package util;
 
-
-import com.linkapital.core.util.file_analizer.FileAnalizerFactory;
+import file_analizer.FileAnalizerFactory;
 
 import javax.validation.constraints.NotEmpty;
 import java.io.File;
 import java.util.HashMap;
 
-import static com.linkapital.core.util.file_analizer.FileAnalizer.FILE;
+import static file_analizer.FileAnalizer.FILE;
 import static java.util.Locale.ROOT;
 
 public class MimeTypes {

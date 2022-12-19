@@ -57,6 +57,22 @@ public class DateUtil {
     }
 
     /**
+     * Parse date in provided format.
+     *
+     * @param date    {@link String} the date to be parsed
+     * @param pattern {@link String} the pattern to apply
+     * @return {@link LocalDateTime}
+     */
+    public static @NotNull LocalDate parseToLocalDate(String date, String pattern) {
+        var formatter = new DateTimeFormatterBuilder()
+                .appendPattern(pattern)
+                .toFormatter();
+
+        return LocalDate.parse(date, formatter);
+    }
+
+
+    /**
      * Converts a string to a date with the "MM-yyyy" pattern. Ex: novembro 2021
      *
      * @param date {@link String} The date to parse.
